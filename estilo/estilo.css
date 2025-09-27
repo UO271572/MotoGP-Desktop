@@ -1,2 +1,27 @@
 /* Sergio Buenaga Gutierrez - UO271572 - 2025-2026 - Uniovi - SEW */
 /*Estilos CSS para la aplicación de escritorio MotoGP*/
+
+/*
+* Especificidad: 001
+*/
+body {
+    font-family: "Palatino", sans-serif, serif, Arial;
+    color:#000000;
+    background-color:#C6D8D5 /*#FEEDCF*/;
+}
+
+/*
+* Especificidad: 001
+* Hereda color de body
+*/
+header{
+    background-color: #FEEDCF;
+}
+
+/*
+* Especificidad: 002
+* Hereda background-color de header
+*/
+h1, nav{
+    color:#262626;
+}
