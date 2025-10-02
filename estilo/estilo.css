@@ -5,23 +5,34 @@
 * Especificidad: 001
 */
 body {
-    font-family: "Palatino", sans-serif, serif, Arial;
+    font-family: "Palatino", Arial, sans-serif;
     color:#000000;
     background-color:#C6D8D5 /*#FEEDCF*/;
 }
 
 /*
 * Especificidad: 001
-* Hereda color de body
+* 
 */
 header{
-    background-color: #FEEDCF;
+    background-color: #FEEDCF;/*Hereda color de body*/
 }
 
 /*
-* Especificidad: 002
-* Hereda background-color de header
+* Especificidad: 001
+* 
 */
 h1, nav{
-    color:#262626;
+    color:#262626;/*Hereda background-color de header*/
+}
+
+/*
+* Especificidad:  010 
+*/
+.active {
+    font-weight: bold;
+}
+
+header + p {
+    font-size: 0.8em;
 }
